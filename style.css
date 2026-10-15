@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Bungee-Regular;
+  src: url(./Font/Bungee/Bungee-Regular.ttf);
+}
+
+header{
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Bungee-Regular;
+  font-size: 20px;
+  color: aqua;
+  border-radius: 8px;
+}
+
+.container {
+  height: 40vh;
+  width: 600px;
+  overflow: hidden;
+  margin-top: 10%;
+  margin-left: 30%;
+  border-radius: 13px;
+  display: flex;
+}
+
+.slide-img {
+  height: 50vh;
+  width: 600px;
+}
+
+.one {
+  animation-name: slide-1;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slide-1{
+  0%{
+    background-color: yellow;
+  }
+
+  25%{
+    width: 600px;
+    margin-left: -600px;
+  }
+
+  45%{
+    width: 600px;
+    margin-left: -1200px;
+  }
+
+  65%{
+    width: 600px;
+    margin-left: -1800px;
+  }
+
+  85%{
+    width: 600px;
+    margin-left: -2400px;
+  }
+
+  100%{
+    width: 600px;
+    margin-left: -3000px;
+  }
+}
+
